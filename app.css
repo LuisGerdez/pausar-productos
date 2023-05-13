@@ -1,0 +1,692 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@font-face{
+    font-family: 'Poppins-ExtraLight';
+    src: url('@/Poppins-ExtraLight.ttf');
+}
+@font-face{
+  font-family: 'Poppins-Regular';
+  src: url('@/Poppins-Regular.otf') ;
+}
+@font-face{
+  font-family: 'Poppins-Light';
+  src: url('@/Poppins-Light.otf') ;
+}
+@font-face{
+  font-family: 'Poppins-Bold';
+  src: url('@/Poppins-Bold.otf') ;
+}
+
+body{
+  font-family: 'Poppins-ExtraLight';
+  background-color: #555555;
+  overflow-x: hidden;
+}
+/*navbar letra*/
+.navbarletra{
+  font-family: 'Poppins-Regular';
+  color: #000 !important;
+}
+/*tipo le letra tabla */
+#datatable th{
+  font-family: 'Poppins-Regular' !important;
+  color: #000 !important;
+  text-align: center !important;
+  vertical-align: middle;
+}
+#datatable td{
+  font-family: 'Poppins-Light' !important;
+  color: #000 !important;
+  text-align: center !important;
+  vertical-align: middle;
+}
+
+/*barra busqueda*/
+#table_filter {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  float: right;
+  border-radius: 5px;
+  border-color: transparent;
+  margin-bottom: 5px;
+  height: 30px;
+  margin-right: 10%;
+}
+.barra_busqueda{
+  margin-right: 20px !important;
+}
+/*Aqui se oculta la barra de busqueda predeterminada que se encuentra dentro del card-body*/
+.dataTables_filter{
+  display: none;
+}
+/*boton nuevo*/
+.dg-boton-nuevo{
+  height: 30px;
+  margin-bottom: 5px;
+}
+/*boton importar*/
+.dg-boton-importar{
+  height: 30px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+/* Los siguientes estilos son caracteristicas de DocuGate*/
+/*Se establece el fondo gris y la linea vertical a la izquierda, estos estilos son generales de la pagina donde se encuentre, para agregar seria copiar una clase pero colocarle
+un nombre correspondiente, ejemplo: body.bg-dg-tablacorrespondiente*/
+
+/*estilos generales de escritorio*/
+.escritorio-page {
+  background-color: #555555;
+  border-left: 5px solid #016dd9;
+  height: 900px;
+}
+.escritorio-page .dg-card-body {
+  border-left: 5px solid #016dd9;
+}
+
+.dg-escritorio-linea{
+  border-left: 5px solid #016dd9;
+  height: 114%;
+}
+
+/*estilos generales*/
+.pages-general {
+    
+  background-color: #555555;
+  border-left: 5px solid #00a2d9;
+  height: 850px;
+}
+.pages-general .dg-card-body {
+  border-left: 5px solid #00a2d9;
+}
+.dg-pages-general-linea{
+  border-left: 5px solid #00a2d9;
+}
+/*estilo general de inventarios*/
+.inventarios-page {
+  background-color: #555555;
+  border-left: 5px solid #00d9a4;
+  height: 850px;
+}
+.inventarios-page .dg-card-body {
+  border-left: 5px solid #00d9a4;
+}
+.dg-inventarios-linea{
+  border-left: 5px solid #00d9a4;
+}
+
+
+.hide{
+  margin-top: 8%;
+  width: 250px;
+}
+/*estilo login*/
+.bg-image{
+  height: 100vh;
+  width: 100vw;
+  padding-top: 100px; 
+  padding-bottom: 250px; 
+  padding-left: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+/*div grupo de botones*/
+.btn-div-login{
+  align-items: center !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+/*boton de login*/
+
+.btn-login {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-family: 'Poppins-ExtraLight';
+  width: 35%;
+}
+.btn-login:hover{
+  color: #ffffff;
+}
+.dg-container-login{
+  background: transparent;
+}
+.dg-img-flot{
+  width: 500px;
+  height: 350px;
+  margin-top: 100px;
+  margin-left: 0;
+}
+.dg-flot{
+  margin-right: 200px;
+  margin-left: 0;
+
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+/*card login*/
+.dg-lg-card{
+  width: 40rem; 
+  position: relative;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(11, 67, 177, 0.5);
+}
+.card-body {
+  flex: 1 1 auto;
+  margin-top: 5px !important;
+  margin-right: 0;
+}
+.image-container {
+  border-left: 10px !important;
+  border-right: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 475px;
+  margin-right: 0;
+  margin-top: 6px;
+}
+
+.dg-img-logo{
+  width: 300px;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.image-container img {
+  border-radius: 20px 0 0 20px;
+  width: 7px;  
+}
+.dg-texto{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+/*estilos footer*/
+/*aqui se etablece que el footer no se sobreponga detras de la tabla*/
+footer {
+  margin-top: 5%;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+}
+/*formularios nuevo*/
+/*
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+
+/*linea vertical*/
+.dg-escritorio-linea{
+  border-left: 5px solid #016dd9;
+  height: 114%;
+}
+.dg-solicitudes-linea{
+  border-left: 5px solid #00a2d9;
+  height: 103%;
+}
+.dg-inventarios-linea{
+  border-left: 5px solid #00d9a4;
+}
+.dg-prioridades-linea{
+  border-left: 5px solid #00a2d9;
+}
+.dg-unidadesdocumentales-linea{
+  border-left: 5px solid #00a2d9;
+}
+.dg-estadossolicitudes-linea{
+  border-left: 5px solid #00a2d9;
+}
+.dg-generos-linea{
+  border-left: 5px solid #00a2d9;
+}
+
+/* estilos del TOAST*/
+.toast{
+  width: 600px !important;
+  
+}
+.toast-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white !important;
+  height: 60%;
+  max-width: 800px !important;
+}
+.custom-toast {
+  background-color:  #ffffff;
+}
+.toast-header .btn-close {
+  background-color: black !important;
+  border: none !important;
+}
+.toast-header .btn-close::before {
+  color: white !important;
+  opacity: 1 !important;
+}
+#notifications .btn-close {
+  color: #fff !important;
+  text-align: center;
+}
+.btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#text-notification{
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-top: 5%;
+}
+/*boton administracion*/
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.align-text-right{
+  padding-left: 40px !important;
+  padding-top: 0% !important;
+  padding-bottom: 0% !important;
+}
+.dropdown-header{
+  font-size: 15px !important;
+}
+
+/*Aspectos generales*/
+/*Fondo general de docugate*/
+.dg-bg-general {
+  background-color: #555555;
+}
+.dg-container{
+  margin-top: 2%;
+  margin-left: 15px;
+  width: 97%;
+}
+
+.buttons-container{
+  margin-bottom: 15px !important;
+}
+
+.dg-container-home{
+  margin-top: 2%;
+  margin-right: 20%;
+  width: 1350px;
+  margin-left: -10%;
+}
+/*numero de filas visibles en las tablas
+.table-responsive tbody tr:nth-of-type(n+5) {
+  display: none;
+}*/
+/*card-body-docugate*/
+.dg-card-body{
+  height: 520px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom: 5%;
+  overflow-x: auto;
+}
+/*Pestaña prestamos-solicitudes*/
+.dg-card-border-prestamo{
+  border-left: 5px solid #00a2d9;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  padding-bottom: 50%;
+}
+/*Pestaña inventarios-listado*/
+.dg-card-border-inventarios{
+  border-left: 5px solid #00d9a4;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+/*Pestaña materiales e insumos*/
+.dg-card-border-materiales{
+  border-left: 5px solid #7473ff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+/*Pestaña reportes y listados*/
+.dg-card-border-reportes{
+  border-left: 5px solid #ff26ff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+/*menu de navegacion horizonta navbarl*/
+.navbar-nav li.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+/*menu de navegacion vertical sidebar*/
+#dg-item-escritorio a:active {
+  background-color: #016dd9;
+}
+#dg-item-solicitudes a:active{
+  background-color: #00a2d9;
+}
+#dg-item-inventarios a:active{
+  background-color: #00d9a4;
+}
+#dg-item-materiales a:active{
+  background-color: #7473ff;
+}
+#dg-item-reportes a:active{
+  background-color: #ff26ff;
+}
+.d-flex.flex-column.flex-shrink-0.bg-light.rounded-end.mt-4 {
+  padding-bottom: 120px;
+}
+/*boton despelgables de los botones de exportacion*/
+.export-dropdown-menu{
+  border: none !important;
+  font-family: 'Poppins-Regular' !important;
+  background-color: white !important;
+  color:  black !important;
+}
+/*estilo boton guardar*/
+#dg-bg-boton-guardar{
+  background-color: #016dd9;
+  width: 15%;
+  height: 50px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.dg-bg-boton-guardar{
+  background-color: #00a2d9;
+  width: 15%;
+  height: 50px;
+  color: white;
+}
+.dg-icono-guardar{
+  float: right;
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-left: 0%;
+}
+#dg-bg-boton-cargar-solicitudes{
+  background-color: #555555;
+  width: 15%;
+  height: 50px;
+  color: white;
+}
+
+.bot{
+    text-underline-position: alphabetic;
+       margin-left: 150px;  
+}
+.im{
+    margin-left: 5px;
+}
+.usuario{
+      margin-left: 40px;
+}
+.menu{
+    text-underline-position: alphabetic;
+    margin-left: 20px;
+    padding: 10px 60px 10px 0px;
+}
+.logo{
+    background-color: #fff;
+}
+.blanco{
+    color: white;
+}
+.negro{
+    color: black;
+}
+.gris{
+    color: #B4BCBD;
+}
+.gris2{
+    color: darkgray;
+}
+.gris3{
+    color: #E3E3E3;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins-ExtraLight';
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  background-color: #555555;
+  padding: 25px 30px 50px;
+  max-height: 600px;
+  margin-left: 190px;
+}
+.excel-btn-dg {
+  background-image: url('../images/icono-exportar-excell.png');
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20% !important;
+  padding-bottom: 20px !important;
+}
+.pdf-btn-dg {
+  background-image: url('../images/icono-exportar-pdf.png');
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20% !important;
+  padding-bottom: 20px !important;
+}
+.print-btn-dg {
+  background-image: url('../images/icono-imprimir.png');
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20% !important;
+  padding-bottom: 20px !important;
+}
+.csv-btn-dg {
+  background-image: url('../images/icono-exportar-csv.png');
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20% !important;
+  padding-bottom: 20px !important;
+}
+@media print {
+  tr:nth-child(odd) {
+      background-color: #f2f2f2;
+  }
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 0px 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 40px;
+  width: 50%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #fff;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box1 input{
+  height: 100px;
+  width: 93%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #fff;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+ .user-details .input-box2 input{
+  height: 100px;
+  width: 25%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #fff;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  margin-right: 1000px
+}
+
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 45px;
+   width: 100%;
+   margin-left: 450px;
+
+ }
+ form .button input{
+   height: 100%;
+   width: 20%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 0px;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: #fff;
+ }
+
+ @media(min-width: 584px){
+ .container{
+
+  max-width: 80%;
+    }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+.p1{
+    font-size: 20px;
+}
+
+
+.p2{
+    margin-left: 200px;
+}
+
+.opt{
+    width: 50%;
+    height: 60%;
+    border: 0;
+}
+
+.frm-title{
+  color: #000;
+  font-weight: 700;
+}
+
+.titulo{
+    background-color: #95A5A6;
+    margin-left: 190px;
+    margin-right: 72px;
+    font-family: 'Poppins-ExtraLight';
+    font-size: 16px;
+    color: black;
+}
+p{
+     margin-left: 15px;
+
+}
+.item-nav {
+  font-family: 'Poppins-ExtraLight';
+  -moz-transition:0.5s;
+  -o-transition:0.5s;
+  -webkit-transition:0.5s;
+  background-color:linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  color:#000;
+  display:block;
+  font-size:16px;
+  line-height:35px;
+  padding:25px 20px;
+  text-decoration:none;
+  transition:0.5s;
+  font-weight: bold;
+  width: 100%;
+}
+.usuario2 {
+  right: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 15px;
+  margin-right: 1em;
+  color: rgb(119, 119, 119);
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  padding-top: 0.5%;
+}
+
+.modal-xxl{
+  --bs-modal-width: 1440px;
+}
+
+.btn-nuevo{
+  font-weight: 700;
+}
+
